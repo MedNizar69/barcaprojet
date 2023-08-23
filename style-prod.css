@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    background:url(https://st.depositphotos.com/3654771/53328/v/450/depositphotos_533288768-stock-illustration-abstract-banner-background-with-gradient.jpg) ;
+    background-color: #181733;
+    font-family: 'Bangers', cursive;
+}
+.all{
+    margin-top: -10%;
+    margin-left: 40%;
+    width: 70%;
+    height: 80%;
+    border-radius: 25px;
+}
+img{
+    width: 100%;
+    height: 100%
+}
+.logo{
+    margin-left:10px;
+    width: 30%;
+    height: 100%
+}
+
+/*header*/
+
+.nav-container{
+    width: 100%;
+    height: 100px;
+    background:darkred;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 100px;
+    z-index: 1;
+    position: fixed;
+    margin-top: -15px;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display:flex
+}
+.nav-bar ul li a{
+    display:block;
+    color: #181733 ;
+    font-size:15px;
+    padding: 10px 25px;
+    border-radius: 25px; 
+    transition:.5s;
+    margin:0 10px
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background:rgb(230, 141, 24)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 14%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+ 
+}
+.cart-header{
+    display: flex;
+    margin:5%;
+    border-bottom: 4px solid darkgray;
+    font-size: large;
+}
+.cart-header h2 {
+    font-size: 24px;
+}
+.product{
+    width: 50%;
+}
+.Quantity {
+
+    width: 17%;
+}
+.prices{
+    width: 15%; 
+}
+.total{
+    width: 15%;  
+}
+.article {
+    display: flex;
+    margin:5%;
+    width: 108%;
+}
+.article p {
+    margin-left: 1%;
+}
+.article img {
+    width:15%;
+}
+.quantity {
+
+    display: flex;
+    width: 32%;
+    padding-left: 21%;
+}
+.price{
+    display: flex;
+    padding-right: 180px;
+}
+
+i {
+    width: 5%;
+}
+.article button {
+    height: 10%;
+    width: 15%;
+    font-weight: bold;
+    background-color: bisque;
+    border: none;
+    border-radius: 5px;
+}
+.commander {
+    width: 156%;
+    margin-left: 33%;
+    display: flex;
+    
+    margin-top: 90%;
+    
+}
+.commander h4 {
+   margin-top: 23px;
+   margin-right: 17px;
+}
+
+.MakePrice {
+    
+    background: red;
+    font-size: inherit;
+    border: none;
+    border-radius: 22px;
+    padding: 21px;
+    color: white;
+    text-decoration: none;
+    
+}
+.MakePrice a:hover {
+    color: indigo;
+}
+
+.myColor{
+    color: red;
+}
+aside a {
+    position: absolute;
+    right: 6%;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+.content {
+    width: 126%;
+}
+
+.article img {
+    border-radius: 10px; /* Adjust the value as needed */
+}
+.article p {
+    margin-top: 0px;
+    color: white; /* Change text color to white */
+}
+
