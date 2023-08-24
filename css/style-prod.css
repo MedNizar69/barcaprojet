@@ -8,9 +8,10 @@
     list-style: none;
 }
 html{
-    background:url(https://st.depositphotos.com/3654771/53328/v/450/depositphotos_533288768-stock-illustration-abstract-banner-background-with-gradient.jpg) ;
+    background:url(https://assorted.downloads.oppo.com/static/assets/products/fcb/images/2560/pc_bg@3x-a3f933d3301a288e002db5a44b09c472.png) center/cover no-repeat;
     background-color: #181733;
     font-family: 'Bangers', cursive;
+    background-position: 2% 40%;
 }
 .all{
     margin-top: -10%;
@@ -147,7 +148,7 @@ i {
     width: 156%;
     margin-left: 33%;
     display: flex;
-    
+    color: white;
     margin-top: 90%;
     
 }
