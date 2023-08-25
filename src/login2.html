@@ -11,7 +11,7 @@
     <!-- Container for the login form -->
     <div class="box">
         <form action="/index.html">
-            <h2>Sign In</h2>
+            <h2>Create Your Account</h2>
             <!-- Input field for username -->
             <div class="inputBox">
                 <input type="text" required>
@@ -26,27 +26,9 @@
             </div>
             <!-- Submit button for the form -->
             <input type="submit" value="Login">
-            <!-- Links for additional actions -->
-            <div class="links">
-                <a href="#" id="forgotPasswordLink">Forgot Password?</a>
-                <p id="forgotPasswordMessage" style="display: none;">An email has been sent to your email address.</p>
-                <a href="login2.html">Sign Up</a>
-            </div>
             
-
-            </div>
+            
         </form>
     </div>
-    <script>
-// Get the necessary element
-const forgotPasswordLink = document.getElementById('forgotPasswordLink');
-
-// Add click event listener to the "Forgot Password?" link
-forgotPasswordLink.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default behavior of the link
-    alert("An email has been sent to your email address."); // Show an alert message
-});
-
-    </script>
 </body>
 </html>

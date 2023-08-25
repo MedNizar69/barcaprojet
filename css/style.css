@@ -30,6 +30,9 @@ html {
     margin-left: 80px;
     width: 200px;
     height: 200px;
+
+
+    
     
 }
 /* Styling images */
@@ -226,7 +229,7 @@ img {
 
 .wrapper .icon {
     position: relative;
-    background: #ffffff;
+    background: #fff;
     border-radius: 50%;
     padding: 15px;
     margin: 10px;
@@ -281,6 +284,7 @@ img {
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    color: orange
 }
 
 .wrapper .icon:hover,
@@ -298,8 +302,7 @@ img {
 
 
 
-
-
+/*   Marquee effects  */
 
 .text-marquee {
     display: inline-block;
@@ -319,7 +322,7 @@ img {
     
     font-size: 80px;
     text-transform: uppercase;
-    color:#ae180d ;
+    color:darkred ;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-fill-color: #181733;
     white-space: nowrap;
@@ -336,4 +339,8 @@ img {
         transform: translateX(-100%);
     }
 }
+
+
+
+
 

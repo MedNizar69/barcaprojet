@@ -1,5 +1,7 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+/* Resetting default styles and setting font */
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +9,17 @@
     text-decoration: none;
     list-style: none;
 }
+
+/* Styling for the HTML */
 html{
+    /* Setting background image */
     background:url(https://assorted.downloads.oppo.com/static/assets/products/fcb/images/2560/pc_bg@3x-a3f933d3301a288e002db5a44b09c472.png) center/cover no-repeat;
     background-color: #181733;
     font-family: 'Bangers', cursive;
     background-position: 2% 40%;
 }
+
+/* Styling for the main container */
 .all{
     margin-top: -10%;
     margin-left: 40%;
@@ -20,18 +27,21 @@ html{
     height: 80%;
     border-radius: 25px;
 }
+
+/* Styling for images */
 img{
     width: 100%;
-    height: 100%
+    height: 100%;
 }
+
+/* Styling for the logo */
 .logo{
     margin-left:10px;
     width: 30%;
-    height: 100%
+    height: 100%;
 }
 
-/*header*/
-
+/* Styling for the navigation bar */
 .nav-container{
     width: 100%;
     height: 100px;
@@ -44,12 +54,18 @@ img{
     position: fixed;
     margin-top: -15px;
 }
+
+/* Styling for the hamburger menu */
 .hamburger{
     display: none;
 }
+
+/* Styling for navigation bar items */
 .nav-bar ul{
-    display:flex
+    display:flex;
 }
+
+/* Styling for navigation bar links */
 .nav-bar ul li a{
     display:block;
     color: #181733 ;
@@ -59,27 +75,14 @@ img{
     transition:.5s;
     margin:0 10px
 }
+
+/* Styling for navigation bar links on hover */
 .nav-bar ul li a:hover{
     color: black;
-    background:rgb(230, 141, 24)
+    background:rgb(230, 141, 24);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Styling for the main content */
 main{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
@@ -87,55 +90,79 @@ main{
     margin-top: 1%;
     margin-bottom: 1%;
     display: flex;
- 
 }
+
+/* Styling for the cart header */
 .cart-header{
     display: flex;
     margin:5%;
     border-bottom: 4px solid darkgray;
     font-size: large;
 }
+
+/* Styling for cart header h2 */
 .cart-header h2 {
     font-size: 24px;
 }
+
+/* Styling for product section */
 .product{
     width: 50%;
 }
-.Quantity {
 
+/* Styling for the Quantity section */
+.Quantity {
     width: 17%;
 }
+
+/* Styling for prices section */
 .prices{
     width: 15%; 
 }
+
+/* Styling for total section */
 .total{
     width: 15%;  
 }
+
+/* Styling for each article */
 .article {
     display: flex;
     margin:5%;
     width: 108%;
 }
+
+/* Styling for article text */
 .article p {
     margin-left: 1%;
+    color: white; /* Change text color to white */
 }
+
+/* Styling for article images */
 .article img {
     width:15%;
+    border-radius: 10px; /* Adjust the value as needed */
 }
-.quantity {
 
+/* Styling for the quantity section */
+.quantity {
     display: flex;
     width: 32%;
     padding-left: 21%;
 }
+
+/* Styling for prices */
 .price{
     display: flex;
     padding-right: 180px;
 }
 
+/* Styling for icons */
 i {
     width: 5%;
 }
+
+/* Styling for article buttons */
 .article button {
     height: 10%;
     width: 15%;
@@ -144,21 +171,24 @@ i {
     border: none;
     border-radius: 5px;
 }
+
+/* Styling for the commander section */
 .commander {
     width: 156%;
     margin-left: 33%;
     display: flex;
     color: white;
     margin-top: 90%;
-    
 }
+
+/* Styling for commander text */
 .commander h4 {
    margin-top: 23px;
    margin-right: 17px;
 }
 
+/* Styling for the MakePrice button */
 .MakePrice {
-    
     background: red;
     font-size: inherit;
     border: none;
@@ -166,29 +196,27 @@ i {
     padding: 21px;
     color: white;
     text-decoration: none;
-    
 }
+
+/* Styling for MakePrice button on hover */
 .MakePrice a:hover {
     color: indigo;
 }
 
+/* Styling for specific class */
 .myColor{
     color: red;
 }
+
+/* Styling for links within the aside section */
 aside a {
     position: absolute;
     right: 6%;
     margin-top: 2%;
     margin-right: 3%;
 }
+
+/* Styling for content section */
 .content {
     width: 126%;
-}
-
-.article img {
-    border-radius: 10px; /* Adjust the value as needed */
-}
-.article p {
-    margin-top: 0px;
-    color: white; /* Change text color to white */
 }

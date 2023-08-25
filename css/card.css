@@ -1,21 +1,30 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* Global Styles */
 *{
-    font-family: 'Poppins',sans-serif;
-    margin:0; padding:0;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none;
+    border: none;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+/* Container Styles */
 .container{
     min-height: 100vh;
-    background: url(https://media.fcbarcelona.com/html/museu/info-en-v3.0/images/template/fondo.jpg)center/cover no-repeat;
+    background: url(https://media.fcbarcelona.com/html/museu/info-en-v3.0/images/template/fondo.jpg) center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     padding-bottom: 60px;
 }
+
+/* Form Styles */
 .container form{
     background: white;
     border-radius: 5px;
@@ -24,138 +33,173 @@
     width: 600px;
     padding-top: 160px;
 }
+
+/* Input Box Styles */
 .container form .inputBox{
     margin-top: 20px;
 }
+
+/* Label Styles */
 .container form .inputBox span{
-   display: block;
-   color:grey;
-   padding-bottom: 5px;
+    display: block;
+    color: grey;
+    padding-bottom: 5px;
 }
+
+/* Input Styles */
 .container form .inputBox input,
 .container form .inputBox select{
-    width:100%;
-    padding:10px;
-    border-radius:10px;
-    border:1px solid rgba(0,0,0,.3);
-    color:grey
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.3);
+    color: grey;
+}
 
-}
+/* Flexbox Styles */
 .container form .flexbox{
-    display:flex;
-    gap:15px;
+    display: flex;
+    gap: 15px;
 }
+
+/* Flexbox Input Box Styles */
 .container form .flexbox .inputBox{
     flex: 1 1 150px;
-
 }
+
+/* Submit Button Styles */
 .container form .submit-btn{
-    width:100%;
-    background: linear-gradient(45deg, rgb(14, 0, 107),rgb(207, 1, 1));
-    margin-top:20px;
-    padding:10px;
-    font-size:20px;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(14, 0, 107), rgb(207, 1, 1));
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
     border-radius: 10px;
-    color:white;
+    color: white;
     cursor: pointer;
     transition: .2s linear;
 }
+
+/* Hover Effect for Submit Button */
 .container form .submit-btn:hover{
-    letter-spacing:2px;
+    letter-spacing: 2px;
     opacity: .8;
 }
+
+/* Card Container Styles */
 .container .card-container{
     margin-bottom: -150px;
     position: relative;
-    height:250px;
-    width:400px;
+    height: 250px;
+    width: 400px;
 }
+
+/* Front Card Styles */
 .container .card-container .front{
     position: absolute;
-    height:100%;
-    width:100%;
-    top: 0; left:0;
-    background: linear-gradient(45deg, rgb(14, 0, 107),rgb(207, 1, 1));
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(14, 0, 107), rgb(207, 1, 1));
     border-radius: 5px;
     backface-visibility: hidden;
-    box-shadow:0 15px 25px rgba(0,0,0,.2);
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
     padding: 20px;
-    transform:perspective(1000px) rotateY(0deg) ;
-    transition:transform .4s ease-out;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
 }
 
-
+/* Front Card Image Styles */
 .container .card-container .front .image{
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     padding-top: 10px;
 }
+
+/* Front Card Image Logo Styles */
 .container .card-container .front .image img{
     height: 50px;
 }
 
-
+/* Front Card Number Box Styles */
 .container .card-container .front .card-number-box{
     padding: 30px 0;
     font-size: 22px;
-    color:#fff
+    color: #fff;
 }
-.container .card-container .front .flexbox {
-    display:flex;
 
+/* Front Card Flexbox Styles */
+.container .card-container .front .flexbox{
+    display: flex;
 }
+
+/* Front Card Box Styles */
 .container .card-container .front .flexbox .box:nth-child(1){
     margin-right: auto;
 }
+
+/* Front Card Text Box Styles */
 .container .card-container .front .flexbox .box{
-  font-size:15px;
-  color:#fff
+    font-size: 15px;
+    color: #fff;
 }
 
+/* Back Card Styles */
 .container .card-container .back{
-    position:absolute;
-    top:0; left: 0;
-    height:100% ;
-    width:100% ;
-    background: linear-gradient(45deg, rgb(14, 0, 107),rgb(207, 1, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(14, 0, 107), rgb(207, 1, 1));
     border-radius: 5px;
-    padding:20px 0;
-    text-align:right;
+    padding: 20px 0;
+    text-align: right;
     backface-visibility: hidden;
     box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    transform:perspective(1000px) rotateY(180deg) ;
-    transition:transform .4s ease-out;
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
 }
+
+/* Back Card Stripe Styles */
 .container .card-container .back .stripe{
-    background:#000 ;
-    width:100%;
+    background: #000;
+    width: 100%;
     margin: 10px 0;
-    height: 50px; 
+    height: 50px;
 }
 
+/* Back Card Box Styles */
 .container .card-container .back .box{
-    padding:0 20px;
+    padding: 0 20px;
 }
+
+/* Back Card Text Styles */
 .container .card-container .back .box span{
-   color:#fff;
-   font-size:15px;
+    color: #fff;
+    font-size: 15px;
 }
+
+/* Back Card CVV Box Styles */
 .container .card-container .back .box .cvv-box{
-    height:50px;
-    padding:10px;
-    margin-top:5px;
-    color:#333;
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
     background: #fff;
-    border-radius:5px;
-    width:100%;
+    border-radius: 5px;
+    width: 100%;
 }
+
+/* Back Card Image Styles */
 .container .card-container .back .box img{
-    margin-top:50px;
+    margin-top: 50px;
     height: 30px;
-
 }
 
+/* Logo Styles */
 .logo img{
     margin-top: 35px;
     margin-left: -10%;

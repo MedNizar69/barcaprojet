@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prank</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Include your custom CSS file -->
+    <link rel="stylesheet" href="/css/prank.css">
+</head>
+<div class="container">
+    <div class="logo">
+        <a href="/index.html"><img src="https://www.pngmart.com/files/15/FC-Barcelona-Logo-PNG-File.png" alt="Barca Logo"></a>
+    </div>
+<body>
+    <div class="wrapper">
+        <!-- Icon for the question -->
+        <i class="fa-solid fa-circle-question"></i>
+        <!-- The question itself -->
+        <h2 class="question">Is Barça The Greatest<br>Team Of All Time?</h2>
+        <div class="btn-group">
+            <!-- Buttons for Yes and No options -->
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+        </div>
+    </div>
+    <script>
+        // Get necessary elements from the DOM
+        const wrapper = document.querySelector('.wrapper');
+        const question = document.querySelector('.question');
+        const yesBtn = document.querySelector('.yes-btn');
+        const noBtn = document.querySelector('.no-btn');
+
+        // Get dimensions of elements for random positioning
+        const wrapperRect = wrapper.getBoundingClientRect();
+        const noBtnRect = noBtn.getBoundingClientRect();
+
+        // Add event listener for the Yes button
+        yesBtn.addEventListener('click', () => {
+            question.innerHTML = 'I knew it ;)';
+        });
+
+        // Add event listener for the No button's mouseover event
+        noBtn.addEventListener('mouseover', () => {
+            // Calculate random positions within the wrapper's boundaries
+            const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 1;
+            const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height)) + 1;
+
+            // Apply the random positions to the No button's style
+            noBtn.style.left = i + 'px';
+            noBtn.style.top = j + 'px';
+        });
+    </script>
+</body>
+</html>
