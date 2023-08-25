@@ -1,0 +1,88 @@
+/* Importing a font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* Resetting default styles and applying common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Styling the HTML element */
+html {
+    background:url(https://i.pinimg.com/736x/20/b8/3f/20b83f077a1075316142f69ccd239f49.jpg)center/cover no-repeat;
+    background-color: #181733;
+    font-family: 'Bangers', cursive;
+}
+
+/* Styling a container for various elements */
+.all {
+    margin-top: -10%;
+    margin-left: 30%;
+    width: 65%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.alo {
+    margin-top: -120px;
+    margin-left: 80px;
+    width: 200px;
+    height: 200px;
+    
+}
+/* Styling images */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling a logo */
+.logo {
+    margin-left: 10px;
+    width: 30%;
+    height: 100%;
+}
+
+/* Styling the navigation header */
+.nav-container {
+    width: 100%;
+    height: 100px;
+    background: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 1;
+    position: fixed;
+}
+
+/* Styling the hamburger menu icon */
+.hamburger {
+    display: none;
+}
+
+/* Styling navigation bar items */
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #181733;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin: 0 10px;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background: rgb(230, 141, 24);
+}
+
+
+

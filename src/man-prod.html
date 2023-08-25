@@ -1,105 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Barça Store For MEN</title>
-        <link rel="stylesheet" href="/css/style-prod.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barça Store For MEN</title>
+    <link rel="stylesheet" href="/css/style-prod.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header section -->
+    <header>
         <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html"><img src="//store.fcbarcelona.com/cdn/shop/t/9/assets/logo-store-white.svg?v=114152627602665118381676546075" alt="Barca Logo"></a>
-                </div>
-            
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/index.html"><img src="//store.fcbarcelona.com/cdn/shop/t/9/assets/logo-store-white.svg?v=114152627602665118381676546075" alt="Barca Logo"></a>
+            </div>
+            <!-- Hamburger menu icon -->
             <div class="hamburger">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
+            <!-- Navigation menu -->
             <nav class="nav-bar">
                 <ul>
                     <li><a href="#media" class="active">Contact Us</a></li>
-                    <li><a href="#category" class="active">Category</a></li>
-                    <li><a href="#category" class="active">Products</a></li>
-                    <li><a href="#" class="active">News</a></li>
+                    <li><a href="/index.html" class="active">Category</a></li>
+                    <li><a href="other-prod.html" class="active">Products</a></li>
+                    <li><a href="news.html" class="active">News</a></li>
+                    <li><a href="team.html" class="active">Team</a></li>
                 </ul>
             </nav>
         </div>
-    
-    
-        </header>
-    
-    <main>  
+    </header>
+
+    <!-- Main content -->
+    <main>
         <div class="content">
-        <div class="cart-header">
-            <h2 class="product">Products</h2>
-            <h2 class="Quantity">Quantity</h2>
-            <h2 class="prices"> Price</h2>
-           
-        </div>
-        <div class="article">
-       
-               <img src="/asset/neymarr.jpg" alt="t-shirt">
-               <p>2023/2024 Jersey</p>
-            
-            <div class="quantity">   
-               <button class="moins">-</button>
-               <p class="Qty">0</p> 
-               <button class="add">+</button>
-            </div>
-            <div class="price">
-               <p class="priceNumber"> 90  </p>
-               <p> DT </p>
-            </div>
-        
-
-        </div>
-        <hr>
-        <div class="article">
-            <img src="/asset/gavi.jpeg" alt="t-shirt">
-            <p>Retro 1925 Jersey</p>
-            <div class="quantity"> 
-                <button class="moins">-</button>
-                <p class="Qty">0</p> 
-                <button class="add">+</button>
-            </div>
-            <div class="price">  
-            <p class="priceNumber"> 150</p>
-            <p> DT </p>
+            <!-- Cart header -->
+            <div class="cart-header">
+                <h2 class="product">Products</h2>
+                <h2 class="Quantity">Quantity</h2>
+                <h2 class="prices">Price</h2>
             </div>
             
-        </div>
-        <hr>
-        <div class="article">
-            <img src="/asset/dejong.jpg" alt="t-shirt">
-            <p>Black third 2020/2021 Jersey </p>
-            <div class="quantity">
-                
-            <button class="moins">-</button>
-            <p class="Qty">0</p> 
-            <button class="add">+</button>
-            </div>
-            <div class="price">
-                <p class="priceNumber"> 60 </p>
-                <p> DT </p>
-            </div>    
-            
-
-     <aside>
-            <div class="commander"> 
-                <h3 class="total-price">Total price : </h3>
-                <h4 id="tp"> 0 </h4>
-                <div class="dt">
-                    <h4> DT </h4>  
+            <!-- Product articles -->
+            <div class="article">
+                <img src="/asset/neymarr.jpg" alt="t-shirt">
+                <p>2023/2024 Jersey</p>
+                <div class="quantity">
+                    <button class="moins">-</button>
+                    <p class="Qty">0</p>
+                    <button class="add">+</button>
                 </div>
-                
-             </div>
-             <a href="card.html" target="_blank" class="MakePrice" > buy </a>
-     </aside>       
+                <div class="price">
+                    <p class="priceNumber">220</p>
+                    <p>DT</p>
+                </div>
+            </div>
+            <hr>
+            
+            <!-- Another product article -->
+            <div class="article">
+                <img src="/asset/gavi.jpeg" alt="t-shirt">
+                <p>Retro 1925 Jersey</p>
+                <div class="quantity">
+                    <button class="moins">-</button>
+                    <p class="Qty">0</p>
+                    <button class="add">+</button>
+                </div>
+                <div class="price">
+                    <p class="priceNumber">150</p>
+                    <p>DT</p>
+                </div>
+            </div>
+            <hr>
+            
+            <!-- Yet another product article -->
+            <div class="article">
+                <img src="/asset/dejong.jpg" alt="t-shirt">
+                <p>Black third 2020/2021 Jersey</p>
+                <div class="quantity">
+                    <button class="moins">-</button>
+                    <p class="Qty">0</p>
+                    <button class="add">+</button>
+                </div>
+                <div class="price">
+                    <p class="priceNumber">185</p>
+                    <p>DT</p>
+                </div>
+
+
+            <!-- Aside section for cart summary -->
+            <aside>
+                <div class="commander">
+                    <h3 class="total-price">Total price :</h3>
+                    <h4 id="tp">0</h4>
+                    <div class="dt">
+                        <h4>DT</h4>
+                    </div>
+                </div>
+                <!-- Link to the shopping cart page -->
+                <a href="card.html" class="MakePrice">Buy</a>
+            </aside>
+        </div>
     </main>
+
+    <!-- Include JavaScript file for functionality -->
     <script src="/js/script-prod.js"></script>
 </body>
 </html>

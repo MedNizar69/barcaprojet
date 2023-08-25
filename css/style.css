@@ -114,6 +114,7 @@ img {
     margin-top: 5px;
     font-size: 22px;
     font-weight: 300;
+    color:#c2a23a;
 }
 
 .content-box label span {
@@ -139,7 +140,7 @@ img {
 
 /* Styling category section */
 .category {
-    background: #F9A3A1;
+    background: #c2a23a;
     margin-top: 80px 0;
 }
 
@@ -199,7 +200,7 @@ img {
 }
 
 .category .category-box .box-content a:hover {
-    background: darkred;
+    background: orange;
 }
 
 .category .category-box .box-content.b2 {
@@ -293,3 +294,46 @@ img {
     margin-left: 23%;
     color: rgb(230, 141, 24);
 }
+
+
+
+
+
+
+
+.text-marquee {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    background: #c2a23a;
+    white-space: nowrap;
+}
+
+.text-wrapper h1 {
+    
+    font-size: 80px;
+    text-transform: uppercase;
+    color:#ae180d ;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-fill-color: #181733;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 3px;
+    animation: move-rtl 5s linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
